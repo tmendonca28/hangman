@@ -54,4 +54,12 @@ public class Game {
     public int getRemainingTries() {
         return MAX_MISSES - misses.length();
     }
+
+    public boolean isWon() {
+        return getCurrentProgress().indexOf('-') == -1;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
 }
